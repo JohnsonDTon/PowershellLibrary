@@ -11,9 +11,37 @@ ping 8.8.8.8 -t
 ```
 
 Test TCP port connectivity.  <br>
-Can gain intel if a port is blocked <br>
+Can gain intel if a port is blocked. Port 9100 is typically used for network printing <br>
 ```powershell
-Test-NetConnection www.google.com -Port 443
+Test-NetConnection 192.168.0.50 -Port 9100
+```
+
+Check routing table, use when you can connect on LAN, but not the internet <br>
+```powershell
+route print
+```
+
+Show network hops of your traffic to destination. <br>
+See where traffic stops/fails or troubleshoot latency or connectivity across networks<br>
+```powershell
+tracert www.google.com
+```
+
+Flush DNS Cache <br>
+Useful when DNS resolves a hostname to incorrect/outdated IP address <br>
+```powershell
+ipconfig /flushdns
+```
+
+Test DNS resolution, see if DNS resolves a hostname to an IP address <br>
+```powershell
+nslookup www.google.com
+```
+
+Release/Request DHCP address <br>
+```powershell
+ipconfig /release
+ipconfig /renew
 ```
 
 Network Adapter information <br>
@@ -29,3 +57,17 @@ Get-NetIPConfiguration -Detailed | Where-Object {$_.InterfaceAlias -eq "Ethernet
 Get-NetIPConfiguration -Detailed | Where-Object {$_.InterfaceAlias -eq "Wi-Fi"}
 ```
 
+Network Discovery <br>
+Scan a network for devices <br>
+Note: nmap is a external tool, must be installed seperately <br>
+https://nmap.org/download.html <br>
+```powershell
+nmap -sn 192.168.0.0/24
+```
+
+Check Arp Cache, a list mapping local IP addresses to MAC addresses <br>
+Useful to see what devices your PC talked to on LAN <br>
+Great to find the ip address of that pesky printer with unknown IP <br>
+```powershell
+arp -a
+```
