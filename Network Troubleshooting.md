@@ -59,7 +59,7 @@ Get-NetIPConfiguration -Detailed | Where-Object {$_.InterfaceAlias -eq "Wi-Fi"}
 
 Network Discovery <br>
 Scan a network for devices <br>
-Note: nmap is a external tool, must be installed seperately <br>
+Note: nmap is an external tool, must be installed seperately <br>
 https://nmap.org/download.html <br>
 ```powershell
 nmap -sn 192.168.0.0/24
@@ -70,4 +70,14 @@ Useful to see what devices your PC talked to on LAN <br>
 Great to find the ip address of that pesky printer with unknown IP <br>
 ```powershell
 arp -a
+```
+
+Shows network connections and listening ports on your own computer. <br>
+```powershell
+netstat -ano
+```
+
+After using netstat, use this to see what process using that port <br>
+```powershell
+Get-Process -Id 1234
 ```
