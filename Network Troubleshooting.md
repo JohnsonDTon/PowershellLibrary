@@ -4,10 +4,16 @@ Includes IP address, subnet mask, default gateway, DHCP, DNS servers, MAC addres
 ipconfig /all
 ```
 
-Ping to test connectivity.<br>
+Test connectivity via ping.<br>
 Ctrl + C to stop <br>
 ```powershell
 ping 8.8.8.8 -t
+```
+
+Test TCP port connectivity.  <br>
+Can gain intel if a port is blocked <br>
+```powershell
+Test-NetConnection www.google.com -Port 443
 ```
 
 Network Adapter information <br>
