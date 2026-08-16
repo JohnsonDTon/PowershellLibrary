@@ -1,6 +1,6 @@
-# Deep Clean uninstall printer and the printer drivers
-# You usually want to do this when there is a printer/scanner issue and its acting up, and you have trouble reinstalling it.
-# Ideally, remove printer, clear print spooler and stuck print jobs, remove printer driver, remove windows driver store via pnputil
+## Deep Clean uninstall printer and the printer drivers
+## You usually want to do this when there is a printer/scanner issue and its acting up, and you have trouble reinstalling it.
+## Ideally, remove printer, clear print spooler and stuck print jobs, remove printer driver, remove windows driver store via pnputil
 
 
 Get-Printer | Format-List Name, DriverName, PortName
