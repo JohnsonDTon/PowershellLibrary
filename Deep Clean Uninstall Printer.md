@@ -1,5 +1,5 @@
 ## Deep Clean uninstall printer and the printer drivers
-## You usually want to do this when there is a printer/scanner issue and its acting up, and you have trouble reinstalling it.
+## You usually want to do this when there is a printer/scanner issue and its acting up, and you want to do a super clean install.
 ## Ideally, remove printer, clear print spooler and stuck print jobs, remove printer driver, remove windows driver store via pnputil
 
 ```powershell
