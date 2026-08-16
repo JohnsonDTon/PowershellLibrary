@@ -4,10 +4,10 @@ Includes IP address, subnet mask, default gateway, DHCP, DNS servers, MAC addres
 ipconfig /all
 ```
 
-Ping to test connectivity. Either cmd works.<br>
+Ping to test connectivity.<br>
+Ctrl + C to stop <br>
 ```powershell
-ping 8.8.8.8
-Test-NetConnection 8.8.8.8
+ping 8.8.8.8 -t
 ```
 
 Network Adapter information <br>
