@@ -12,15 +12,15 @@ Inside Template folder is how you want it copied exactly, aka with Passport fold
 for /l %A in (1, 1, 3) do @xcopy /E "%USERPROFILE%\Desktop\Template Folder" "%USERPROFILE%\Desktop\Copies\%A" /i
 ```
 
-## 3) Now create a CSV called 'Data' with column A 1 to x, and column B next to it with what you want them renamed. Have the header name, newname.
-## EXAMPLE:
-## name,newname
-## 1,Johnson Ton 1502519
-## 2,Amy Nguyen 1502520
-## 3,Randy Phan 1502521
+3) Now create a CSV called 'Data' with column A 1 to x, and column B next to it with what you want them renamed. Have the header name, newname.
+EXAMPLE:
+name,newname
+1,Johnson Ton 1502519
+2,Amy Nguyen 1502520
+3,Randy Phan 1502521
 
 
-## 4) Run this code in POWERSHELL.
+4) Run this code in POWERSHELL.
 ```powershell
 $csv = Import-Csv "$env:USERPROFILE\Desktop\Data.csv"
 $files = get-childitem "$env:USERPROFILE\Desktop\Copies"
