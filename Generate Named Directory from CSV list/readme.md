@@ -1,6 +1,10 @@
-Lets say your company has been working with physical papers for many years. Soon, you realized you're running out of space and you need to find a solution.<br>
-You decided to scan and digitalize them all into a storage. <br>
-However, you first will need to create templates of folders and have them organized and named so your staff members know where to store the files after they scan them.<br>
+A company has been storing physical documents for many years and is running out of storage space. <br>
+To solve this, the company decides to scan and digitize the documents and store them electronically. <br>
+<br>
+Before scanning begins, a standardized folder structure needs to be created for each client so that scanned documents can be organized consistently. <br>
+Instead of manually creating hundreds or thousands of identical folder structures and naming each one individually, PowerShell and Command Prompt can be used to automate the process using names provided in a CSV file. <br>
+
+Here's how to automate that procedure:<br>
 
 Here's how you can automate that procedure:<br>
 
