@@ -4,8 +4,6 @@ To solve this, the company decides to scan and digitize the documents and store 
 Before scanning begins, a standardized folder structure needs to be created for each client so that scanned documents can be organized consistently. <br>
 Instead of manually creating hundreds or thousands of identical folder structures and naming each one individually, PowerShell and Command Prompt can be used to automate the process using names provided in a CSV file. <br>
 
-Here's how to automate that procedure:<br>
-
 Here's how you can automate that procedure:<br>
 
 1) Create the template folder with all the skeleton folders and place it on your Desktop.<br>
