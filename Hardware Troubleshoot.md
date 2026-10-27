@@ -50,3 +50,7 @@ Select-Object TimeCreated, ProviderName, Id, LevelDisplayName, Message -First 30
 Format-List
 ```
 
+Battery
+```powershell
+powercfg /batteryreport
+```
