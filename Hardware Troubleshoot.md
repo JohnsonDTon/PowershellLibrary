@@ -54,3 +54,9 @@ Battery
 ```powershell
 powercfg /batteryreport
 ```
+
+```text
+Get-WinEvent -FilterHashtable @{LogName='System'; Id=41} -MaxEvents 1 | Format-List TimeCreated, Message
+Get-WinEvent -FilterHashtable @{LogName='System'; Level=1,2,3; StartTime=(Get-Date).AddHours(-2)} | Format-Table TimeCreated, Id, ProviderName, Message -Wrap
+Get-WinEvent -FilterHashtable @{LogName='Application'; Level=1,2,3; StartTime=(Get-Date).AddHours(-2)} | Format-Table TimeCreated, Id, ProviderName, Message -Wrap
+```
