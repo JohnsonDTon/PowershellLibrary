@@ -16,7 +16,7 @@ Storage health<br>
 Look for non-zero uncorrected read and write errors, high wear, or a high temperature.
 ```powershell
 Get-PhysicalDisk | Get-StorageReliabilityCounter | Format-Table DeviceId, Temperature, ReadErrorsUncorrected, WriteErrorsUncorrected, Wear, PowerOnHours
-```+
+```
 
 
 RAM
