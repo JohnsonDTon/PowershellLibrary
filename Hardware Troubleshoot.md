@@ -12,6 +12,12 @@ If you see a critical warning, back up your data immediately.
 ```powershell
 chkdsk C: /scan
 ```
+Storage health<br>
+Look for non-zero uncorrected read and write errors, high wear, or a high temperature.
+```powershell
+Get-PhysicalDisk | Get-StorageReliabilityCounter | Format-Table DeviceId, Temperature, ReadErrorsUncorrected, WriteErrorsUncorrected, Wear, PowerOnHours
+```+
+
 
 RAM
 ```text
